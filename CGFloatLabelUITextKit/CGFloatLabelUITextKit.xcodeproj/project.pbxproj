@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAD5F81B1A343DD9006C7BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5F81A1A343DD9006C7BD6 /* AppDelegate.swift */; };
+		EAD5F81D1A343DD9006C7BD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5F81C1A343DD9006C7BD6 /* ViewController.swift */; };
+		EAD5F8201A343DD9006C7BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD5F81E1A343DD9006C7BD6 /* Main.storyboard */; };
+		EAD5F8221A343DD9006C7BD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD5F8211A343DD9006C7BD6 /* Images.xcassets */; };
+		EAD5F8251A343DD9006C7BD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD5F8231A343DD9006C7BD6 /* LaunchScreen.xib */; };
+		EAD5F8311A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5F8301A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.swift */; };
+		EAD5F83C1A343E37006C7BD6 /* CGFloatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5F83B1A343E37006C7BD6 /* CGFloatTextField.swift */; };
+		EAD5F83E1A343F3C006C7BD6 /* CGFloatTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5F83D1A343F3C006C7BD6 /* CGFloatTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD5F82B1A343DD9006C7BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD5F80D1A343DD9006C7BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAD5F8141A343DD9006C7BD6;
+			remoteInfo = CGFloatLabelUITextKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAD5F8151A343DD9006C7BD6 /* CGFloatLabelUITextKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGFloatLabelUITextKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD5F8191A343DD9006C7BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD5F81A1A343DD9006C7BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAD5F81C1A343DD9006C7BD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAD5F81F1A343DD9006C7BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAD5F8211A343DD9006C7BD6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAD5F8241A343DD9006C7BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EAD5F82A1A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGFloatLabelUITextKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD5F82F1A343DD9006C7BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD5F8301A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatLabelUITextKitTests.swift; sourceTree = "<group>"; };
+		EAD5F83B1A343E37006C7BD6 /* CGFloatTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatTextField.swift; sourceTree = "<group>"; };
+		EAD5F83D1A343F3C006C7BD6 /* CGFloatTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAD5F8121A343DD9006C7BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD5F8271A343DD9006C7BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAD5F80C1A343DD9006C7BD6 = {
+			isa = PBXGroup;
+			children = (
+				EAD5F8171A343DD9006C7BD6 /* CGFloatLabelUITextKit */,
+				EAD5F82D1A343DD9006C7BD6 /* CGFloatLabelUITextKitTests */,
+				EAD5F8161A343DD9006C7BD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAD5F8161A343DD9006C7BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5F8151A343DD9006C7BD6 /* CGFloatLabelUITextKit.app */,
+				EAD5F82A1A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAD5F8171A343DD9006C7BD6 /* CGFloatLabelUITextKit */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5F83A1A343E01006C7BD6 /* CGFloatLabelTextKit */,
+				EAD5F81A1A343DD9006C7BD6 /* AppDelegate.swift */,
+				EAD5F81C1A343DD9006C7BD6 /* ViewController.swift */,
+				EAD5F81E1A343DD9006C7BD6 /* Main.storyboard */,
+				EAD5F8211A343DD9006C7BD6 /* Images.xcassets */,
+				EAD5F8231A343DD9006C7BD6 /* LaunchScreen.xib */,
+				EAD5F8181A343DD9006C7BD6 /* Supporting Files */,
+			);
+			path = CGFloatLabelUITextKit;
+			sourceTree = "<group>";
+		};
+		EAD5F8181A343DD9006C7BD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5F8191A343DD9006C7BD6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD5F82D1A343DD9006C7BD6 /* CGFloatLabelUITextKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5F8301A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.swift */,
+				EAD5F82E1A343DD9006C7BD6 /* Supporting Files */,
+			);
+			path = CGFloatLabelUITextKitTests;
+			sourceTree = "<group>";
+		};
+		EAD5F82E1A343DD9006C7BD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5F82F1A343DD9006C7BD6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD5F83A1A343E01006C7BD6 /* CGFloatLabelTextKit */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5F83B1A343E37006C7BD6 /* CGFloatTextField.swift */,
+				EAD5F83D1A343F3C006C7BD6 /* CGFloatTextView.swift */,
+			);
+			path = CGFloatLabelTextKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAD5F8141A343DD9006C7BD6 /* CGFloatLabelUITextKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD5F8341A343DD9006C7BD6 /* Build configuration list for PBXNativeTarget "CGFloatLabelUITextKit" */;
+			buildPhases = (
+				EAD5F8111A343DD9006C7BD6 /* Sources */,
+				EAD5F8121A343DD9006C7BD6 /* Frameworks */,
+				EAD5F8131A343DD9006C7BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGFloatLabelUITextKit;
+			productName = CGFloatLabelUITextKit;
+			productReference = EAD5F8151A343DD9006C7BD6 /* CGFloatLabelUITextKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAD5F8291A343DD9006C7BD6 /* CGFloatLabelUITextKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD5F8371A343DD9006C7BD6 /* Build configuration list for PBXNativeTarget "CGFloatLabelUITextKitTests" */;
+			buildPhases = (
+				EAD5F8261A343DD9006C7BD6 /* Sources */,
+				EAD5F8271A343DD9006C7BD6 /* Frameworks */,
+				EAD5F8281A343DD9006C7BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD5F82C1A343DD9006C7BD6 /* PBXTargetDependency */,
+			);
+			name = CGFloatLabelUITextKitTests;
+			productName = CGFloatLabelUITextKitTests;
+			productReference = EAD5F82A1A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAD5F80D1A343DD9006C7BD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Neeraj Kumar";
+				TargetAttributes = {
+					EAD5F8141A343DD9006C7BD6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					EAD5F8291A343DD9006C7BD6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = EAD5F8141A343DD9006C7BD6;
+					};
+				};
+			};
+			buildConfigurationList = EAD5F8101A343DD9006C7BD6 /* Build configuration list for PBXProject "CGFloatLabelUITextKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAD5F80C1A343DD9006C7BD6;
+			productRefGroup = EAD5F8161A343DD9006C7BD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAD5F8141A343DD9006C7BD6 /* CGFloatLabelUITextKit */,
+				EAD5F8291A343DD9006C7BD6 /* CGFloatLabelUITextKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAD5F8131A343DD9006C7BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD5F8201A343DD9006C7BD6 /* Main.storyboard in Resources */,
+				EAD5F8251A343DD9006C7BD6 /* LaunchScreen.xib in Resources */,
+				EAD5F8221A343DD9006C7BD6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD5F8281A343DD9006C7BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAD5F8111A343DD9006C7BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD5F83E1A343F3C006C7BD6 /* CGFloatTextView.swift in Sources */,
+				EAD5F81D1A343DD9006C7BD6 /* ViewController.swift in Sources */,
+				EAD5F81B1A343DD9006C7BD6 /* AppDelegate.swift in Sources */,
+				EAD5F83C1A343E37006C7BD6 /* CGFloatTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD5F8261A343DD9006C7BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD5F8311A343DD9006C7BD6 /* CGFloatLabelUITextKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAD5F82C1A343DD9006C7BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAD5F8141A343DD9006C7BD6 /* CGFloatLabelUITextKit */;
+			targetProxy = EAD5F82B1A343DD9006C7BD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAD5F81E1A343DD9006C7BD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD5F81F1A343DD9006C7BD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAD5F8231A343DD9006C7BD6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD5F8241A343DD9006C7BD6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAD5F8321A343DD9006C7BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAD5F8331A343DD9006C7BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAD5F8351A343DD9006C7BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CGFloatLabelUITextKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAD5F8361A343DD9006C7BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CGFloatLabelUITextKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EAD5F8381A343DD9006C7BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CGFloatLabelUITextKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGFloatLabelUITextKit.app/CGFloatLabelUITextKit";
+			};
+			name = Debug;
+		};
+		EAD5F8391A343DD9006C7BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CGFloatLabelUITextKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGFloatLabelUITextKit.app/CGFloatLabelUITextKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAD5F8101A343DD9006C7BD6 /* Build configuration list for PBXProject "CGFloatLabelUITextKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD5F8321A343DD9006C7BD6 /* Debug */,
+				EAD5F8331A343DD9006C7BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD5F8341A343DD9006C7BD6 /* Build configuration list for PBXNativeTarget "CGFloatLabelUITextKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD5F8351A343DD9006C7BD6 /* Debug */,
+				EAD5F8361A343DD9006C7BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAD5F8371A343DD9006C7BD6 /* Build configuration list for PBXNativeTarget "CGFloatLabelUITextKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD5F8381A343DD9006C7BD6 /* Debug */,
+				EAD5F8391A343DD9006C7BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAD5F80D1A343DD9006C7BD6 /* Project object */;
+}

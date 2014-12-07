@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CGFloatLabelUITextKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVZ-8h-pQj" customClass="CGFloatTextField" customModule="CGFloatLabelUITextKit" customModuleProvider="target">
+                                <rect key="frame" x="148" y="74" width="304" height="45"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.81176470590000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="4sb-bO-N6m"/>
+                                    <constraint firstAttribute="height" constant="45" id="TC6-9e-hlQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Middle Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYE-8b-kzs" customClass="CGFloatTextField" customModule="CGFloatLabelUITextKit" customModuleProvider="target">
+                                <rect key="frame" x="148" y="172" width="304" height="45"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.81176470590000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="E7d-mN-A3K"/>
+                                    <constraint firstAttribute="height" constant="45" id="bdZ-rZ-VWD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tj8-ws-6VP" customClass="CGFloatTextField" customModule="CGFloatLabelUITextKit" customModuleProvider="target">
+                                <rect key="frame" x="148" y="271" width="304" height="45"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.81176470590000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2VV-US-Ydu"/>
+                                    <constraint firstAttribute="width" constant="304" id="qzr-jq-rEU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3s-Vw-3Aj" customClass="CGFloatTextView" customModule="CGFloatLabelUITextKit" customModuleProvider="target">
+                                <rect key="frame" x="148" y="395" width="304" height="128"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.81176470590000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Fge-Wi-vZQ"/>
+                                    <constraint firstAttribute="width" constant="304" id="KbF-nZ-Y6l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="zVZ-8h-pQj" secondAttribute="centerX" id="4Qz-Pp-k8f"/>
+                            <constraint firstAttribute="centerX" secondItem="AYE-8b-kzs" secondAttribute="centerX" id="9Zq-V6-VWk"/>
+                            <constraint firstItem="c3s-Vw-3Aj" firstAttribute="top" secondItem="tj8-ws-6VP" secondAttribute="bottom" constant="79" id="ErX-wf-FXB"/>
+                            <constraint firstAttribute="centerX" secondItem="AYE-8b-kzs" secondAttribute="centerX" id="Lhf-BG-K46"/>
+                            <constraint firstAttribute="centerX" secondItem="tj8-ws-6VP" secondAttribute="centerX" id="iA5-0J-3ms"/>
+                            <constraint firstItem="zVZ-8h-pQj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="iAK-JB-8g0"/>
+                            <constraint firstAttribute="centerX" secondItem="c3s-Vw-3Aj" secondAttribute="centerX" id="ifD-gf-TZZ"/>
+                            <constraint firstItem="tj8-ws-6VP" firstAttribute="top" secondItem="AYE-8b-kzs" secondAttribute="bottom" constant="54" id="v42-3V-hux"/>
+                            <constraint firstItem="AYE-8b-kzs" firstAttribute="top" secondItem="zVZ-8h-pQj" secondAttribute="bottom" constant="53" id="wZN-U0-IfE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Lhf-BG-K46"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="zVZ-8h-pQj" id="Nd8-Hc-IwQ"/>
+                        <outlet property="floatTextView" destination="c3s-Vw-3Aj" id="1NI-II-oT2"/>
+                        <outlet property="lastNameTextField" destination="tj8-ws-6VP" id="2Uz-lx-jX1"/>
+                        <outlet property="middleNameTextField" destination="AYE-8b-kzs" id="nko-Oq-FCT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="39"/>
+        </scene>
+    </scenes>
+</document>
