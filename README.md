@@ -1,7 +1,10 @@
 CGFLoatingUIKit
 ===============
 
-Floating label text is a known UI element.Here UITextField and UITextView are supported with FloatingLabels in Swift.
+UITextField and UITextView are supported with FloatingLabels in Swift.
+Things that can be customized like font,color,animationTime,floating label offset for UItextField.
+UItextView with placeholder text and floating label support.
+
 
 Here is the gif - 
 
