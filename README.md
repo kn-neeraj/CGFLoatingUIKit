@@ -5,4 +5,4 @@ Floating label text is a known UI element.Here UITextField and UITextView are su
 
 Here is the gif - 
 
-![Matt D. Smith's Design](http://dribbble.s3.amazonaws.com/users/6410/screenshots/1254439/form-animation-_gif_.gif)
+!(https://www.dropbox.com/s/int32e5ti3u5hxx/floatLabelGif.gif?dl=0)
