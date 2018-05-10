@@ -25,11 +25,11 @@ class ViewController: UIViewController {
         
         
         self.firstNameTextField.floatingLabelText = "First Name"
-        self.firstNameTextField.floatingLabelFontColor = UIColor.blueColor()
-        self.firstNameTextField.floatingLabelFont = UIFont.systemFontOfSize(15)
+        self.firstNameTextField.floatingLabelFontColor = UIColor.blue
+        self.firstNameTextField.floatingLabelFont = UIFont.systemFont(ofSize: 15)
         
         self.middleNameTextField.floatingLabelText = "Middle Name"
-        self.middleNameTextField.floatingLabelFontColor = UIColor.greenColor()
+        self.middleNameTextField.floatingLabelFontColor = UIColor.green
         self.middleNameTextField.animationTime = 1.0
         self.middleNameTextField.floatingLabelOffset = 20.0
         
