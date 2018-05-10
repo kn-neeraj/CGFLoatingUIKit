@@ -62,7 +62,7 @@ class CGFloatTextView: UITextView {
     }
     
     // MARK: Animation constants.
-    var animationTime:NSTimeInterval = 0.3
+    var animationTime:TimeInterval = 0.3
     var floatingLabelOffset:CGFloat  = 10.0
     
 
@@ -75,24 +75,17 @@ class CGFloatTextView: UITextView {
     weak var textViewDelegate: UITextViewDelegate?
 
     // MARK: Initializers
-    required init(coder aDecoder: NSCoder) {
-        self.placeHolderLabel = UILabel(frame: CGRectZero)
-        self.floatingLabel = UILabel(frame: CGRectZero)
+    required init?(coder aDecoder: NSCoder) {
+        self.placeHolderLabel = UILabel(frame: CGRect.zero)
+        self.floatingLabel = UILabel(frame: CGRect.zero)
         super.init(coder: aDecoder)
         self.commonInitializer()
     }
     
-    override init(frame: CGRect) {
-        self.placeHolderLabel = UILabel(frame: CGRectZero)
-        self.floatingLabel = UILabel(frame: CGRectZero)
-        super.init(frame: frame)
-        self.commonInitializer()
-    }
-    
-    override init() {
-        self.placeHolderLabel = UILabel(frame: CGRectZero)
-        self.floatingLabel = UILabel(frame: CGRectZero)
-        super.init()
+    override init(frame: CGRect, textContainer: NSTextContainer?) {
+        self.placeHolderLabel = UILabel(frame: CGRect.zero)
+        self.floatingLabel = UILabel(frame: CGRect.zero)
+        super.init(frame: frame, textContainer: textContainer)
         self.commonInitializer()
     }
     
@@ -101,9 +94,9 @@ class CGFloatTextView: UITextView {
 private extension CGFloatTextView {
     func commonInitializer() {
         self.addSubview(self.placeHolderLabel)
-        self.sendSubviewToBack(self.placeHolderLabel)
+        self.sendSubview(toBack: self.placeHolderLabel)
         self.addSubview(self.floatingLabel)
-        self.sendSubviewToBack(self.floatingLabel)
+        self.sendSubview(toBack: self.floatingLabel)
         self.delegate = self
         self.placeHolderLabel.font = self.font
         self.placeHolderLabel.textColor = self.textColor
@@ -112,7 +105,7 @@ private extension CGFloatTextView {
     }
     
     func handleTextChanged() {
-        if (countElements(self.text) == 0) {
+        if self.text.count == 0 {
             self.placeHolderLabel.text = self.placeholderText
         }
         else {
@@ -121,32 +114,32 @@ private extension CGFloatTextView {
     }
     
     func adjustPlaceholderFrame() {
-        let oldFrame = self.placeHolderLabel.frame
-        let textFieldBounds:CGRect = self.bounds
-        let placeholderLabelReqSize:CGSize = self.placeHolderLabel.sizeThatFits(CGSizeMake(textFieldBounds.width, textFieldBounds.height))
-        self.placeHolderLabel.frame = CGRectMake(2.7, 5.0, placeholderLabelReqSize.width, placeholderLabelReqSize.height)
+        //let oldFrame = self.placeHolderLabel.frame
+        let textFieldBounds: CGRect = self.bounds
+        let placeholderLabelReqSize: CGSize = self.placeHolderLabel.sizeThatFits(CGSize(width: textFieldBounds.width, height: textFieldBounds.height))
+        self.placeHolderLabel.frame = CGRect(x: 2.7, y: 5.0, width: placeholderLabelReqSize.width, height: placeholderLabelReqSize.height)
     }
     
     func adjustFloatingHolderFrame() {
-        let oldFrame = self.floatingLabel.frame
+        //let oldFrame = self.floatingLabel.frame
         let textFieldBounds:CGRect = self.bounds
-        let floatingLabelReqSize:CGSize = self.floatingLabel.sizeThatFits(CGSizeMake(textFieldBounds.width, textFieldBounds.height))
-        self.floatingLabel.frame = CGRectMake(2.7, 5.0, floatingLabelReqSize.width, floatingLabelReqSize.height)
+        let floatingLabelReqSize: CGSize = self.floatingLabel.sizeThatFits(CGSize(width: textFieldBounds.width, height: textFieldBounds.height))
+        self.floatingLabel.frame = CGRect(x: 2.7, y: 5.0, width: floatingLabelReqSize.width, height: floatingLabelReqSize.height)
     }
     
     func editingBeginAnimation() {
-        UIView.animateWithDuration(self.animationTime, animations: { () -> Void in
+        UIView.animate(withDuration: self.animationTime, animations: { () -> Void in
             let oldFrame = self.floatingLabel.frame
-            self.floatingLabel.frame = CGRectMake(oldFrame.origin.x,oldFrame.origin.y - (self.floatingLabelOffset + CGRectGetHeight(oldFrame)) , CGRectGetWidth(oldFrame), CGRectGetHeight(oldFrame))
+            self.floatingLabel.frame = CGRect(x: oldFrame.origin.x, y:oldFrame.origin.y - (self.floatingLabelOffset + oldFrame.height) , width: oldFrame.width, height: oldFrame.height)
             self.floatingLabel.alpha = 1.0
             self.floatingLabelState = true
         });
     }
     
     func editingEndAnimation() {
-        UIView.animateWithDuration(self.animationTime, animations: { () -> Void in
+        UIView.animate(withDuration: self.animationTime, animations: { () -> Void in
             let oldFrame = self.floatingLabel.frame
-            self.floatingLabel.frame = CGRectMake(oldFrame.origin.x,oldFrame.origin.y + (self.floatingLabelOffset + CGRectGetHeight(oldFrame)) , CGRectGetWidth(oldFrame), CGRectGetHeight(oldFrame))
+            self.floatingLabel.frame = CGRect(x: oldFrame.origin.x, y: oldFrame.origin.y + (self.floatingLabelOffset + oldFrame.height) , width: oldFrame.width, height: oldFrame.height)
             self.floatingLabel.alpha = 0.0;
             self.floatingLabelState = false
         });
@@ -156,7 +149,7 @@ private extension CGFloatTextView {
 
 
 extension CGFloatTextView:UITextViewDelegate {
-    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         if let uwTextFieldDelegate = self.textViewDelegate {
             return uwTextFieldDelegate.textViewShouldBeginEditing!(textView)
         }
@@ -165,7 +158,7 @@ extension CGFloatTextView:UITextViewDelegate {
         }
     }
     
-    func textViewShouldEndEditing(textView: UITextView) -> Bool {
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
         self.handleTextChanged()
         if let uwTextFieldDelegate = self.textViewDelegate {
             return uwTextFieldDelegate.textViewShouldEndEditing!(textView)
@@ -175,9 +168,9 @@ extension CGFloatTextView:UITextViewDelegate {
         }
     }
     
-    func textViewDidBeginEditing(textView: UITextView) {
+    func textViewDidBeginEditing(_ textView: UITextView) {
         self.placeHolderLabel.text = ""
-        if  countElements(textView.text) > 0 && !self.floatingLabelState {
+        if  textView.text.count > 0 && !self.floatingLabelState {
             self.editingBeginAnimation()
         }
         if let uwTextFieldDelegate = self.textViewDelegate {
@@ -185,7 +178,7 @@ extension CGFloatTextView:UITextViewDelegate {
         }
     }
     
-    func textViewDidEndEditing(textView: UITextView) {
+    func textViewDidEndEditing(_ textView: UITextView) {
         if self.floatingLabelState {
             self.editingEndAnimation()
         }
@@ -194,43 +187,43 @@ extension CGFloatTextView:UITextViewDelegate {
         }
     }
     
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
-        if  countElements(text) > 0 && !self.floatingLabelState {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if  text.count > 0 && !self.floatingLabelState {
             self.editingBeginAnimation()
         }
         if let uwTextFieldDelegate = self.textViewDelegate {
-            return uwTextFieldDelegate.textView!(textView, shouldChangeTextInRange: range, replacementText: text)
+            return uwTextFieldDelegate.textView!(textView, shouldChangeTextIn: range, replacementText: text)
         }
         else {
             return true
         }
     }
     
-    func textViewDidChange(textView: UITextView) {
+    func textViewDidChange(_ textView: UITextView) {
           self.handleTextChanged()
         if let uwTextFieldDelegate = self.textViewDelegate {
              uwTextFieldDelegate.textViewDidChange!(textView)
         }
     }
     
-    func textViewDidChangeSelection(textView: UITextView) {
+    func textViewDidChangeSelection(_ textView: UITextView) {
         if let uwTextFieldDelegate = self.textViewDelegate {
              uwTextFieldDelegate.textViewDidChangeSelection!(textView)
         }
     }
     
-    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {
         if let uwTextFieldDelegate = self.textViewDelegate {
-            return uwTextFieldDelegate.textView!(textView, shouldInteractWithURL: URL, inRange: characterRange)
+            return uwTextFieldDelegate.textView!(textView, shouldInteractWith: URL, in: characterRange)
         }
         else {
             return true
         }
     }
     
-    func textView(textView: UITextView, shouldInteractWithTextAttachment textAttachment: NSTextAttachment, inRange characterRange: NSRange) -> Bool {
+    func textView(_ textView: UITextView, shouldInteractWith textAttachment: NSTextAttachment, in characterRange: NSRange) -> Bool {
         if let uwTextFieldDelegate = self.textViewDelegate {
-            return uwTextFieldDelegate.textView!(textView, shouldInteractWithTextAttachment: textAttachment, inRange: characterRange)
+            return uwTextFieldDelegate.textView!(textView, shouldInteractWith: textAttachment, in: characterRange)
         }
         else {
             return true
